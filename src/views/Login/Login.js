@@ -5,9 +5,13 @@ import imgLogo from "../../resources/img/Login-Best-Pizza.png";
 import icUser from "../../resources/img/ic_usuario.png";
 import icPass from "../../resources/img/ic_contrasena.png";
 
-export default function Login() {
+export default function Login( users ) {
   const [userEmail, setUserEmail] = useState("");
   const [userPass, setUserPass] = useState("");
+
+  function handleClick() {
+    alert('click')
+  }
 
   return (
     <div className="login">
@@ -52,7 +56,7 @@ export default function Login() {
             </form>
 
             <a href="/" className="login__form__forget">¿Olvidaste tu contraseña?</a>
-            <button className="login__form__button">Iniciar sesión</button>
+            <button className="login__form__button" onClick={() => handleClick()}>Iniciar sesión</button>
           </div>
         </div>
       </div>
