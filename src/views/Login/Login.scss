@@ -1,0 +1,218 @@
+.login {
+    &__container {
+        width: 100vw;
+        height: 100vh;
+    }
+    &__left {
+        background-image: url("../../resources/img/imagebkg.png");
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        &__img {
+            width: 100%;
+            height: auto;
+            margin-top: -7vh;
+            margin-top: 0;
+            background-image: url("../../resources/img/Pizza.png");
+            background-repeat: no-repeat;
+            background-size: 70vh;
+            background-position: -25vh -30px;
+        }
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__logo {
+            width: 100px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        &__box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 7px;
+            background-color: rgba(255, 255, 255, 0.452);
+            position: absolute;
+            height: 260px;
+            width: 90%;
+            bottom: 5vh;
+            padding: 10px;
+            &__text {
+                margin-top: 5px;
+                font-size: 14px;
+                color: rgb(34, 32, 32);
+            }
+        }
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        width: 70vw;
+        &__input {
+            position: relative;
+            &__icon {
+                width: 23px;
+                height: 23px;
+                position: absolute;
+                right: 5px;
+                top: 5px;
+            }
+            &:last-child {
+                margin-top: 10px;
+            }
+        }
+        &__text-input {
+            height: 35px;
+            font-size: 16px;
+            width: 70vw;
+            border: none;
+            padding: 0 30px 0 10px;
+            border-radius: 3px;
+            outline: none;
+            &:last-child {
+                margin-top: 10px;
+                margin-bottom: 3px;
+            }
+        }
+        &__forget, &__button {
+            font-size: 14px;
+            font-family: 'Quicksand';
+        }
+        &__forget {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+        &__button {
+            margin: 10px 0;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 3px;
+            width: 70vw;
+            background-color: rgb(255, 206, 70);
+            box-shadow: 0px 2px 3px rgb(154, 154, 177);
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .login {
+        &__left {
+            height: 50vh;
+            &__img {
+                background-position: -2vh -150px;
+            }
+        }
+        &__right {
+            &__box {
+                position: block;
+                height: 40vh;
+                &__title, &__text {
+                    margin-bottom: 5px;
+                }
+                &__title {
+                    font-size: 30px;
+                }
+                &__text {
+                    font-size: 16px;
+                }
+                @media screen and (max-height: 450px) {
+                    box-shadow: 0px 0px 3px rgb(209, 209, 209);
+                    height: 90vh;
+                }
+            }
+        }
+        &__form {
+            &__input {
+                height: 30px;
+            }
+            &__text-input {
+                height: 35px;
+                border: 1px solid rgb(199, 199, 199);
+            }
+            &__input, &__forget {
+                margin-bottom: 15px;
+            }
+            &__button {
+                height: 60px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .login {
+        &__container {
+            display: flex;
+        }
+        &__left {
+            width: 50vw;
+            height: 100vh;
+            background-size: cover;
+            align-items: center;
+            padding: 0;
+            &__img {
+                width: 100%;
+                height: 90vh;
+                margin-top: 10vh;
+                margin-left: 6%;
+                background-position: center;
+                background-size: 560px 560px;
+                @media screen and (min-width: 1200px) {
+                    background-position: center;
+                    background-size: 620px 620px;
+                }
+            }
+        }
+        &__right {
+            display: block;
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            padding: 20vh 0;
+            &__logo {
+                position: initial;
+                margin-bottom: 50px;
+                width: 180px;
+            }
+            &__box {
+                position: initial;
+                width: 450px;
+                height: 50vh;
+            }
+        }
+        &__form {
+            width: 100%;
+            &__input {
+                width: 90%;
+                &__icon {
+                    right: 12px;
+                    top: 12px;
+                }
+            }
+            &__text-input {
+                width: 100%;
+                height: 50px;
+            }
+            &__forget, &__button {
+                font-size: 15px;
+            }
+            &__forget {
+                margin-top: 15px;
+            }
+            &__button {
+                width: 90%;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.listado-footer {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__social {
+        width: fit-content;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        &__icon {
+            width: 50px;
+            padding: 10px;
+        }
+    }
+    &__brand-logo {
+        width: 35px;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .listado-footer {
+        position: absolute;
+        width: 50vw;
+    }
+}
