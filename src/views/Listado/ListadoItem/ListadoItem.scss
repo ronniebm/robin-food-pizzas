@@ -12,9 +12,10 @@
     &__logo-img {
         width: 100%;
     }
-    &__title { 
-        font-size: 16px;
+    &__title {
+        font-size: 15px;
         margin-top: 10px;
+        height: 35px;
     }
     &__address {
         font-size: 11px;
@@ -30,6 +31,7 @@
     .listado-item {
         width: 20vw;
         height: 27vw;
+        height: 32vw;
         margin: auto;
         &__logo-div {
             width: 18vw;
