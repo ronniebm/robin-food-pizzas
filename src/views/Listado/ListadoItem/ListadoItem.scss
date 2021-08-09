@@ -11,6 +11,11 @@
     }
     &__logo-img {
         width: 100%;
+        transition: ease 0.3s width;
+        &:hover {
+            width: 158px;
+            transition: ease 0.3s width;
+        }
     }
     &__title {
         font-size: 14px;
@@ -22,6 +27,7 @@
         margin-top: 3px;
         color: rgb(54, 54, 54);
     }
+    
     &:nth-child(odd) {
         margin-right: 8%;
     }
