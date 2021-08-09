@@ -18,7 +18,8 @@ export default function Listado() {
 
   function handleClickLogout () {
     localStorage.removeItem('user');
-    history.push("");
+    history.push("/");
+    //history.go(0);
   }
 
   useEffect(() => {
@@ -74,6 +75,7 @@ export default function Listado() {
                     {
                       stores.map( store => 
                         <ListadoItem
+                          key={store.id}
                           brand={store.name}
                           address={store.address}
                           setModal={setModal}
